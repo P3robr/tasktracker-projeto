@@ -63,13 +63,22 @@ def exibir_menu() -> None:
     print("3. Sair da aplicação")
 
 
+def ler_opcao_menu() -> str:
+    """Repete o prompt até receber uma opção existente."""
+    while True:
+        opcao = input("Escolha uma opção: ").strip()
+        if opcao in {"1", "2", "3"}:
+            return opcao
+        print("Erro: escolha 1, 2 ou 3.")
+
+
 def main() -> None:
     """Mantém o menu ativo até a opção de saída."""
     tarefas: list[dict[str, str]] = []
 
     while True:
         exibir_menu()
-        opcao = input("Escolha uma opção: ").strip()
+        opcao = ler_opcao_menu()
 
         if opcao == "1":
             cadastrar_tarefa(tarefas)
@@ -78,8 +87,6 @@ def main() -> None:
         elif opcao == "3":
             print("TaskTracker encerrado.")
             break
-        else:
-            print("Erro: escolha 1, 2 ou 3.")
 
 
 if __name__ == "__main__":
