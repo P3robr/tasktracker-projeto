@@ -50,6 +50,10 @@ O menu oferece três opções:
 
 As tarefas permanecem disponíveis enquanto o programa estiver em execução. Persistência em arquivo e containerização serão tratadas nas próximas etapas.
 
+## Vídeo de apresentação
+
+[Assista à demonstração técnica do TaskTracker no YouTube](https://youtu.be/-L0KpZp6HNU).
+
 ## Autor
 
 Nícolas Henrique Tito Lettieri  
